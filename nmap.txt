@@ -1,0 +1,13 @@
+nmap is short for network mapper it is an open source linux command line tool that is used to scan IP addresses and ports in a network and detect installed applications
+it allows netwrk admins to find whic devices are running on their netwrk,discover open ports and services and detect vulnerabilities
+
+nmap -sP 192.168.0.0/16
+-sP means Skip POrt scan this option tells nmap not to do a port scan after host discovery just print out the available hosts that responsded to the scan
+this is often called as a ping scan 
+
+nmap -sS 192.168.0.0
+-sS means the Syn Scan this scan options is used to quickly perform the scnning of thousands of ports on a fast netwotrk and not get restricted by the firewalls it is a Shealthy scan since it never completes the TCP connections
+
+nmap -sSV -O 192.168.0.0 -oN abc.txt
+-v-> nmap version -O --> OS detections -oN normal output : requests a Normal output file to be creaetd which has output
+ 
